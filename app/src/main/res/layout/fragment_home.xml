@@ -12,21 +12,18 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:tabIndicatorAnimationMode="elastic"
-        app:tabIndicatorColor="@color/brand_700"
         app:tabIndicatorHeight="2sp"
-        app:tabSelectedTextColor="@color/teal_700"
-        app:tabTextAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:tabTextColor="#1ABB56">
+        app:tabTextAppearance="@style/TextAppearance.AppCompat.Medium">
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Open chat" />
+            android:text="@string/open_chat" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="History" />
+            android:text="@string/history" />
 
     </com.google.android.material.tabs.TabLayout>
 

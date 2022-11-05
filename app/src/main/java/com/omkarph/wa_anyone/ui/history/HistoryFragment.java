@@ -75,6 +75,7 @@ public class HistoryFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+//        return inflater.inflate(R.layout.fragment_history_fallback, container, false);
         return inflater.inflate(R.layout.fragment_history, container, false);
     }
 
@@ -82,19 +83,19 @@ public class HistoryFragment extends Fragment {
     public void onViewCreated(@NonNull @NotNull View view, @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        historyList = (LinearLayout) view.findViewById(R.id.historyList);
-        View newEntry;
-        for(int i=0; i<5; i++){
-            newEntry = getLayoutInflater().inflate(R.layout.history_entry, historyList, false);
-            historyList.addView(newEntry);
-        }
-
-        // Setting Database handler
-        historyDB = new HistoryHandler(getContext());
-        List<Entry> history = historyDB.getEntries();
-        Log.d("dbentry", "No. of entries: "+history.size());
-        for(Entry entry : history)
-            Log.d("dbentry", entry.getPHONE() + " : " + entry.getDATE_TIME());
+//        historyList = (LinearLayout) view.findViewById(R.id.historyList);
+//        View newEntry;
+//        for(int i=0; i<5; i++){
+//            newEntry = getLayoutInflater().inflate(R.layout.history_entry, historyList, false);
+//            historyList.addView(newEntry);
+//        }
+//
+//        // Setting Database handler
+//        historyDB = new HistoryHandler(getContext());
+//        List<Entry> history = historyDB.getEntries();
+//        Log.d("dbentry", "No. of entries: "+history.size());
+//        for(Entry entry : history)
+//            Log.d("dbentry", entry.getPHONE() + " : " + entry.getDATE_TIME());
 
     }
 }

@@ -6,6 +6,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
+import com.omkarph.wa_anyone.FallbackHistoryFragment;
 import com.omkarph.wa_anyone.ui.chat.ChatFragment;
 import com.omkarph.wa_anyone.ui.history.HistoryFragment;
 
@@ -16,7 +17,8 @@ public class TabAdapter extends FragmentStateAdapter {
     public TabAdapter(@NonNull Fragment fragment) {
         super(fragment);
         chat = new ChatFragment();
-        history = new HistoryFragment();
+        history = new FallbackHistoryFragment();
+//        history = new HistoryFragment();
     }
 
     @NonNull

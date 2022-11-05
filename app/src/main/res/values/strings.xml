@@ -17,7 +17,7 @@
     <!-- Settings -->
     <string name="SETTINGS_HISTORY">SAVE_HISTORY</string>
     <string name="SETTINGS_DEFAULT_WA">DEFAULT_APP</string>
-<!--    <string name="SETTINGS_PREF">com.omkarph.wa_anyone_preferences</string>-->
+    <!--    <string name="SETTINGS_PREF">com.omkarph.wa_anyone_preferences</string>-->
 
     <string name="home_title">Whatsapp anyone</string>
 
@@ -39,4 +39,11 @@
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="my_linkedin_encoded">
+        &lt;a href="https://www.linkedin.com/in/omkarphansopkar/">Omkar Phansopkar&lt;/a>
+    </string>
+    <string name="myLinkTextFallback">Omkar Phansopkar</string>
+    <string name="history_fallback">This feature will be\nimplemented soon\n\nStay tuned !!</string>
+    <string name="open_chat">Open chat</string>
+    <string name="history">History</string>
 </resources>

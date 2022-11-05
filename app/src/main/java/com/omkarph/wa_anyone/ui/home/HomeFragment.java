@@ -31,9 +31,7 @@ public class HomeFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         homeViewModel =
                 new ViewModelProvider(this).get(HomeViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_home, container, false);
-
-        return root;
+        return inflater.inflate(R.layout.fragment_home, container, false);
     }
 
     @Override

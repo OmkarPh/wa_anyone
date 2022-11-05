@@ -17,10 +17,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginTop="28dp"
-            android:background="#F1F6F3"
+            android:background="@color/design_default_color_background"
+            app:ccpDialog_textColor="?android:attr/textColorPrimary"
+            app:ccp_autoDetectCountry="true"
             app:ccp_countryPreference="IN,US"
             app:ccp_defaultNameCode="IN"
-            app:ccp_autoDetectCountry="true"
             app:ccp_rememberLastSelection="true"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

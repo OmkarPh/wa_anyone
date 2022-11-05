@@ -93,6 +93,7 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.rate:
 //                    API.rateApp(this);
+                    Toast.makeText(getBaseContext(), "You can rate our app soon !!", Toast.LENGTH_SHORT).show();
                     return true;
 //                case R.id.action_settings:
 //                    Intent intent = new Intent(this, SettingsActivity.class);

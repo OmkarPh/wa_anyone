@@ -38,7 +38,11 @@ public class API {
      * @param appContext Context of the activity/fragment to trigger the API from
      */
     public static void goToWhatsapp(String phone, int WHATSAPP_TYPE, Context appContext){
-        String url = "https://wa.me/"+phone;
+        goToWhatsapp(phone, WHATSAPP_TYPE, appContext, "");
+    }
+
+    public static void goToWhatsapp(String phone, int WHATSAPP_TYPE, Context appContext, String prefillText) {
+        String url = "https://wa.me/"+phone+"?text="+prefillText;
         try{
             PackageManager packageManager = appContext.getPackageManager();
             Intent i = new Intent(Intent.ACTION_VIEW);
@@ -67,8 +71,6 @@ public class API {
             Toast.makeText(appContext, "Some error occured while opening whatsapp :(\nContact the developers for more info", Toast.LENGTH_LONG).show();
         }
     }
-
-
     /**
      * @param appContext Context of the activity/fragment to trigger the API from
      */
